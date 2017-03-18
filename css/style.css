@@ -148,10 +148,7 @@ a:link, a:visited {
   padding: 0;
   text-align: center;
   margin: 5px 0 10px 0;
-  background: rgba(0, 0, 0, 0.0);
-  -webkit-transition: 350ms all;  
-  -moz-transition: 350ms all;
-  transition: 350ms all;      
+  background-color: black;
 }
 
 .left-nav-item:hover {
@@ -160,13 +157,13 @@ a:link, a:visited {
   margin: 0;
   line-height: 60px;  
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.88);  
-  -webkit-transition: 500ms all;  
-  -moz-transition: 500ms all;
-  transition: 500ms all;    
-  -webkit-animation: pulse 750ms infinite both;
-  -moz-animation: pulse 750ms infinite both;  
-  animation: pulse 750ms infinite both;  
+  background-color: white;
+  -webkit-transition: 500ms background-color;  
+  -moz-transition: 500ms background-color;
+  transition: 500ms background-color;    
+  -webkit-animation: pulse 400ms infinite both;
+  -moz-animation: pulse 400ms infinite both;  
+  animation: pulse 400ms infinite both;  
 
 }
 
