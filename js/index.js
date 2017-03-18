@@ -20,7 +20,7 @@ $rollup.on('click', function(){
 
 function showContent() {
   $rollup.trigger('click');
- 
+  
   var id = $(this).data('anchor');
   var pos = $(id).position();
   scrollTo(pos.left, pos.top);
@@ -34,6 +34,10 @@ $leftNavLinks.on('click', showContent);
 $('.logo').on('click', function(){
   $('body').scrollTop(0);
   
+  if($('#rollup .fa').hasClass('fa-chevron-up')){
+    $rollup.trigger('click');
+  }
+
   if (!$titles.hasClass('teleport')){
     $titles.addClass('teleport');
   }
