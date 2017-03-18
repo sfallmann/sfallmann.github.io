@@ -5,7 +5,7 @@
   font-size: 28px;
 }
 
-body {
+html,body {
   min-width: 320px;
 }
 
@@ -185,6 +185,23 @@ a:link, a:visited {
 #rollup:hover {
   cursor:pointer;
 }
+
+
+@media screen and (max-width: 500px) and (orientation: potrait) {
+  
+  * {
+    font-size: 68px;
+  }
+}
+
+
+@media screen and (min-width: 640px) and (orientation: potrait) {
+  
+  * {
+    font-size: 48px;
+  }
+}
+
 
 @media only screen and (min-width: 1100px) and (orientation: landscape) {
   
