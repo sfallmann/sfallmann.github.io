@@ -20,9 +20,6 @@ html {
 
 .wrapper {
   background-color: black;
-  background: url("https://image.ibb.co/ft818v/dark_forest.jpg");
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .overlay {
@@ -174,6 +171,14 @@ a:link, a:visited {
   cursor:pointer;
 }
 
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    background-color: black;
+    background: url("https://image.ibb.co/ft818v/dark_forest.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }  
+}
 
 @media only screen and (min-width: 1100px) and (orientation: landscape) {
   
