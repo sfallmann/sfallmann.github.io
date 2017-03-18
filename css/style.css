@@ -1,3 +1,4 @@
+
 * {
   font-family: 'New Rocker', cursive;
   box-sizing: border-box;
@@ -184,7 +185,7 @@ a:link, a:visited {
   cursor:pointer;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   
   .fixed {
     padding: 15px;
@@ -243,3 +244,29 @@ a:link, a:visited {
   }
 }
 
+@media only screen and (min-width: 1930px) {
+  * {
+    font-size: 48px;
+  }
+
+}
+
+@media only screen and (min-width: 1930px) and (orientation: landscape) {
+  .col-1-xl {width: 8.33%;}
+  .col-2-xl {width: 16.66%;}
+  .col-3-xl {width: 25%;}
+  .col-4-xl {width: 33.33%;}
+  .col-5-xl {width: 41.66%;}
+  .col-6-xl {width: 50%;}
+  .col-7-xl {width: 58.33%;}
+  .col-8-xl {width: 66.66%;}
+  .col-9-xl {width: 75%;}
+  .col-10-xl {width: 83.33%;}
+  .col-11-xl {width: 91.66%;}
+  .col-12-xl {width: 100%;}
+
+
+  #left-nav {
+    min-width: 400px;
+  }  
+}
