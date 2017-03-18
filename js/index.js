@@ -31,8 +31,9 @@ function showContent() {
 
 $leftNavLinks.on('click', showContent);
 
-  $('.logo').on('click', function(){
-    $('body').scrollTop(0);
+$('.logo').on('click', function() {
+  $('html,body').scrollTop(0);
+
   if (!$titles.hasClass('teleport')){
     $titles.addClass('teleport');
   }
