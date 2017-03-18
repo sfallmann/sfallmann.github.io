@@ -187,7 +187,7 @@ a:link, a:visited {
 }
 
 
-@media screen and (max-width: 500px) and (orientation: potrait) {
+@media screen and (max-width: 320px) and (orientation: potrait) {
   
   * {
     font-size: 68px;
