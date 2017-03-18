@@ -3,17 +3,22 @@
   box-sizing: border-box;
   font-size: 28px;
 }
-html {
 
-}
 body {
+  min-width: 320px;
+}
+
+.wrapper {
   background-color: black;
   background: url("https://image.ibb.co/ft818v/dark_forest.jpg");
   background-attachment: fixed;
   background-size: cover;
-  min-width: 320px;
 }
 
+.overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.50);
+}
  
 .row::after {
     content: "";
@@ -58,16 +63,17 @@ iframe {
 }
 
 .fixed {
+  padding: 0;
   position: fixed;
   z-index: 10;
 }
 
 #left-nav {
-  background: rgba(0, 0, 0, 0.80);
+  background: rgba(0, 0, 0, 0.85);
   color: white;
-  -webkit-box-shadow: 10px 0px 15px -4px rgba(0,0,0,0.69);
-  -moz-box-shadow: 10px 0px 15px -4px rgba(0,0,0,0.69);
-  box-shadow: 10px 0px 15px -4px rgba(0,0,0,0.69);
+  -webkit-box-shadow: 10px 0px 15px -2px rgba(0,0,0,0.69);
+  -moz-box-shadow: 10px 0px 15px -2px rgba(0,0,0,0.69);
+  box-shadow: 10px 0px 15px -2px rgba(0,0,0,0.69);
   min-width: 320px;
 }
 
@@ -79,12 +85,6 @@ iframe {
 
 #header {
     margin-top: 200px;
-}
-
-.left-nav-item:hover {
-  -webkit-animation: pulse 750ms infinite both;
-  -moz-animation: pulse 750ms infinite both;  
-  animation: pulse 750ms infinite both;
 }
 
 .wobble {
@@ -114,7 +114,7 @@ iframe {
   transition: 500ms all;
 }
 
-.link-wrapper:hover, .left-nav-item:hover {
+.link-wrapper:hover {
   -webkit-box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.9);
   -moz-box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.9);
   box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.9);  
@@ -136,15 +136,38 @@ a:link, a:visited {
 }
 
 .left-nav-item {
+  color: white;
   width: 100%;
-  padding: 10x 0 10px 0;
+  line-height: 60px;
+  padding: 0;
   text-align: center;
-  padding: 3px 0 3px 0;
   margin: 5px 0 10px 0;
+  background: rgba(0, 0, 0, 0.0);
+  -webkit-box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.0);
+  -moz-box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.0);
+  box-shadow: 0px 0px 26px 12px rgba(0,0,0,0.0);
+  -webkit-transition: 350ms all;  
+  -moz-transition: 350ms all;
+  transition: 350ms all;      
 }
 
 .left-nav-item:hover {
+  color: black;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;  
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.88);  
+  -webkit-box-shadow: 0px 0px 26px 12px rgba(255,255,255,0.9);
+  -moz-box-shadow: 0px 0px 26px 12px rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 26px 12px rgba(255,255,255,0.9);  
+  -webkit-transition: 500ms all;  
+  -moz-transition: 500ms all;
+  transition: 500ms all;    
+  -webkit-animation: pulse 750ms infinite both;
+  -moz-animation: pulse 750ms infinite both;  
+  animation: pulse 750ms infinite both;  
+
 }
 
 .hidden {
@@ -163,6 +186,10 @@ a:link, a:visited {
 
 @media only screen and (min-width: 768px) {
   
+  .fixed {
+    padding: 15px;
+  }
+
   .section {
     margin-top: 0px;
   }  
