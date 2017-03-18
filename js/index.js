@@ -31,16 +31,15 @@ function showContent() {
 
 $leftNavLinks.on('click', showContent);
 
-$('.logo').on('click', function(){
-  $('body').scrollTop(0);
-  
-  if($('#rollup .fa').hasClass('fa-chevron-up')){
-    $rollup.trigger('click');
-  }
-
+  $('.logo').on('click', function(){
+    $('body').scrollTop(0);
   if (!$titles.hasClass('teleport')){
     $titles.addClass('teleport');
   }
+
+  if($('#rollup .fa').hasClass('fa-chevron-up')){
+    $rollup.trigger('click');
+  }  
   
 });
 
