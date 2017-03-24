@@ -18,7 +18,7 @@ html {
   padding: 5px 0 5px 0;
 }
 
-#bg, body {
+#bg {
     background: black url('../img/dark_forest-s.jpg') fixed;
     background-position: center center;
     background-repeat: no-repeat;
