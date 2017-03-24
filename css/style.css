@@ -22,7 +22,7 @@ body {
   background: black url('../img/dark_forest-s.jpg') fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 640px;
+  background-size: 100% auto;
 }
 
 .overlay {
