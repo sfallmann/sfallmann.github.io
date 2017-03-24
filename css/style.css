@@ -19,15 +19,13 @@ html {
 }
 
 body {
-  background: black url('../img/dark_forest-s.jpg') fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background: black;
 }
 
 .overlay {
   position: relative;
   background: rgba(0, 0, 0, 0.50);
+  background-image: none;
 }
  
 .row::after {
@@ -174,7 +172,7 @@ a:link, a:visited {
   cursor:pointer;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px)  and (orientation: landscape){
 
   body {
     background: black url('../img/dark_forest.jpg') fixed;
