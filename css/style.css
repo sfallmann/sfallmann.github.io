@@ -21,7 +21,7 @@
   background: black url('../img/dark_forest.jpg') fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 .overlay {
@@ -176,6 +176,10 @@ a:link, a:visited {
 
 @media only screen and (min-width: 1100px) and (orientation: landscape) {
   
+  #bg {
+    background-size: cover;
+  }
+
   .left-nav-item:hover {
     color: black;
     padding: 0;
