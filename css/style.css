@@ -19,10 +19,11 @@ html {
 }
 
 #bg {
+
     background: black url('../img/dark_forest-s.jpg') fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;     
+    background-size: 768px auto;     
 }
 
 .overlay {
