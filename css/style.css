@@ -18,8 +18,11 @@ html {
   padding: 5px 0 5px 0;
 }
 
-body {
-  background: black;
+#bg, body {
+    background: black url('../img/dark_forest-s.jpg') fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;     
 }
 
 .overlay {
@@ -172,9 +175,9 @@ a:link, a:visited {
   cursor:pointer;
 }
 
-@media only screen and (min-width: 600px)  and (orientation: landscape){
+@media only screen and (min-width: 768px) {
 
-  body {
+  #bg {
     background: black url('../img/dark_forest.jpg') fixed;
     background-position: center center;
     background-repeat: no-repeat;
