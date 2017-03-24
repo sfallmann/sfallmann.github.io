@@ -9,16 +9,15 @@
   font-family: 'New Rocker', cursive;
 }
 
-html {
-  width: 100vw;
-}
+
 
 #left-nav p {
   margin: 0 0 5px 0;
   padding: 5px 0 5px 0;
 }
 
-body {
+#bg {
+  position: absolute;
   background: black url('../img/dark_forest.jpg') fixed;
   background-position: center center;
   background-repeat: no-repeat;
