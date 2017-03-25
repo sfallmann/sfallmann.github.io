@@ -62,17 +62,23 @@ body {
 .btn {
   cursor: pointer;
 }
+/* http://www.bymichaellancaster.com/blog/fluid-iframe-and-images-without-javascript-plugins/ */
+.iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; 
+  
+  height: 0;
+  overflow: hidden;
+}
 
 iframe {
-  min-height: 520px;
-  max-width: 75%;
-  min-width: 290px;
-  border-radius: 5px;
-  border-width: 16px 0 0 0;
-  border-color: white;
-  border-style: solid;
+  position: absolute;
+  top: 0; 
+  left: 0px;
   width: 100%;
-  overflow: hidden; 
+  height: 100%;
+  border: 5px solid white;
+  border-radius: 5px;  
 }
 
 .fixed {
