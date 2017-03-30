@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  min-width: 320px;
+}
+body {
+  background: url('../../assets/img/dark_brick_wall.png') repeat;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container,
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+[class*="col-"] {
+  width: 100%;
+}
+.img {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 100%;
+}
+/* The "clock" */
+#clock {
+  border-radius: 50px 50px 50px 50px;
+  background-color: black;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  border: 10px groove #ffffff;
+  font-family: 'Orbitron', sans-serif;
+}
+input[type="button"]:hover {
+  cursor: pointer;
+}
+/* Top section of the clock - time display and lights */
+#clock-display {
+  margin: auto;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  margin: 10px 0 10px 0;
+  background: #000000;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+}
+.time-display {
+  color: #ff0000;
+  background-color: #000000;
+  padding: 0 3px 0 3px;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  font-size: 5.25em;
+  padding: 0;
+  min-width: 73px;
+}
+.time-display:nth-of-type(3n+0) {
+  min-width: 20px;
+}
+#lights-display {
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  margin: auto;
+  text-align: center;
+  height: 200px;
+  background: #FAEBD7;
+  border-radius: 50px 50px 0 0;
+  border: 2px 3px 3px 5px;
+  border-style: inset;
+  border-color: #ffffff;
+}
+.light-wrapper {
+  display: inline-block;
+}
+.light-cover {
+  position: absolute;
+  z-index: 100;
+  width: 150px;
+  height: 60px;
+  opacity: .2;
+  border-radius: 7px;
+  background: url('../../assets/img/light_texture.jpg');
+}
+.light {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
+  padding: 5px;
+}
+#work-light {
+  width: 150px;
+  border: 5px outset #532900;
+  background-color: #773c00;
+  color: #532900;
+}
+#rest-light {
+  width: 150px;
+  border: 5px outset #004200;
+  background-color: #005900;
+  color: #004200;
+}
+#work-light.light-on {
+  color: #fff0e1;
+  background-color: #fa5505;
+  border-color: #773c00;
+}
+#rest-light.light-on {
+  color: #ceffce;
+  background-color: #00c400;
+  border-color: #005900;
+}
+.light-on {
+  -webkit-box-shadow: 5px 9px 17px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 9px 17px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 9px 17px -3px rgba(0, 0, 0, 0.75);
+}
+/* The control panel - bottom section of clock */
+#control-panel {
+  color: #ffffff;
+  font-size: 1em;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  background: #FAEBD7;
+  border-radius: 0 0 50px 50px;
+}
+.panel-subsection {
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  min-height: 80px;
+  padding: 0;
+}
+.panel-subsection div {
+  display: inline-block;
+}
+.col-8 .col-12:first-of-type {
+  border-bottom: 5px ridge #C8BCAC;
+}
+.btn {
+  font-size: 1.1em;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  min-height: 40px;
+}
+#reset {
+  background: #cc0000;
+}
+#start {
+  background: #008000;
+}
+button {
+  border-radius: 100px;
+  min-height: 40px;
+  min-width: 40px;
+  border: 3px outset #C8BCAC;
+}
+button:hover {
+  cursor: pointer;
+}
+.label {
+  vertical-align: bottom;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000;
+  min-width: 110px;
+}
+.nopad-nomargin {
+  padding: 0;
+  margin: 0;
+}
+.time-input {
+  color: #ff0000;
+  background-color: #000000;
+  padding: 0 3px 0 3px;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 1.5em;
+  min-height: 40px;
+  min-width: 40px;
+  width: 60px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 900px) {
+  #clock {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  #lights-display {
+    height: 100px;
+  }
+  .panel-subsection:last-of-type {
+    border-left: 5px ridge #C8BCAC;
+    border-radius: 0 0 50px 0;
+  }
+  .container {
+    padding: 125px 125px 0 125px;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+/* variables */
+/* mixins */
+.outline {
+  border: 1px solid black;
+}
+.centered {
+  margin: auto;
+  text-align: center;
+}
+.shadowed {
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+}
+.orbitron-font {
+  font-family: 'Orbitron', sans-serif;
+}
+.time {
+  color: #ff0000;
+  background-color: #000000;
+  padding: 0 3px 0 3px;
+  -webkit-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px -6px 49px -6px rgba(0, 0, 0, 0.75);
+}
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
